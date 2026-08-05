@@ -1,0 +1,23 @@
+{
+  "client_name": "hospital_system",
+  "base_url": "https://your-api-domain.com/fhir",
+  "api_key": "your-api-key-here-replace-with-generated-key",
+  "permissions": ["read", "write"],
+  "endpoints": {
+    "metadata": "/fhir/metadata",
+    "codesystem": "/fhir/CodeSystem/namaste",
+    "conceptmap": "/fhir/ConceptMap/namaste-icd11",
+    "valueset": "/fhir/ValueSet",
+    "translate": "/fhir/ConceptMap/$translate",
+    "lookup": "/fhir/ValueSet/$lookup",
+    "bundle": "/fhir/Bundle",
+    "oauth_token": "/fhir/oauth/token"
+  },
+  "oauth_config": {
+    "token_endpoint": "https://your-api-domain.com/fhir/oauth/token",
+    "grant_type": "client_credentials",
+    "scope": "system/CodeSystem.read system/ConceptMap.read system/ValueSet.read system/Bundle.write"
+  },
+  "created_at": "2025-01-24T23:27:00+05:30",
+  "expires_at": "2026-01-24T23:27:00+05:30"
+}
